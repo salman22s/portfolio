@@ -1,0 +1,365 @@
+/*
+Theme Name:   Astra Child
+Template:     astra
+Theme URI:    https://wpastra.com/
+Author:       Salman
+Author URI:   https://yourwebsite.com/
+Description:  A child theme of Astra
+Version:      1.0.0
+Text Domain:  astra-child
+*/
+
+.ast-container {
+  padding: 0px;
+  width: 100%;
+  margin: 0px;
+  min-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  color: #091434;
+  background-color: aliceblue;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  padding-bottom: 100px;
+}
+
+.intro h1 {
+  transform-origin: left;
+  font-size: 64px;
+  font-weight: 600;
+  color: #091434;
+  letter-spacing: -.5px;
+  padding-top: 60px;
+}
+
+h2{
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.3em;
+  color: #1e293b;;
+}
+
+.intro p {
+  margin: 0;
+  padding: 20px 20px 0px 0px;
+}
+
+.introTxt {
+  width: 60vw;
+  /* padding: 40px; */
+}
+
+
+
+.introTxt button {
+  margin-top: 50px;
+  border-radius: 30px;
+}
+
+.introImg img {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  transform: scaleX(-1);
+  width: 35vw;
+  object-fit: cover;
+}
+
+.parent {
+  display: block;
+  width: 100%;
+  margin: 0px;
+  padding: 30px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* CONTAINER */
+
+.container {
+  margin: auto;
+  width: 100%;
+}
+
+.logo img {
+  vertical-align: middle;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-secondary {
+  border: 2px solid #000C3F;
+  color: #000C3F;
+  background-color: transparent;
+}
+
+.btn-secondary:hover {
+  background-color: #000C3F;
+  color: #fff;
+}
+
+
+/* ABOUT */
+
+.about {
+  padding: 2rem 0;
+  background-color: #E6F0FA;
+}
+
+.progress-list {
+  margin: 0px 0px 50px 0px;
+  list-style: none;
+
+}
+
+.aboutContent {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.aboutImg img {
+  border-radius: 50%;
+  width: 20vw;
+  margin-right: 50px;
+}
+
+.aboutText {
+  width: 60vw;
+  padding: 20px;
+}
+
+.strength {
+  padding: 30px;
+}
+
+.progress-item {
+  margin-bottom: 1rem;
+}
+
+.label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.progress {
+  background-color: #eee;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 4px;
+}
+
+.btn-text {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 0.5rem;
+}
+
+.educationParent {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.education {
+  background-color: #000C3F;
+  width: 70vw;
+  margin: 0 auto;
+  text-align: -moz-center;
+  border-radius: 20px;
+  padding: 50px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.education p {
+  color: aliceblue;
+  font-family: poppins;
+  font-size: 20px;
+  margin-top: 30px;
+
+}
+
+.education h3 {
+  margin: 20px;
+  font-family: poppins;
+  color: aliceblue;
+  text-decoration: underline;
+}
+
+.educationImg img {
+  margin-top: -150px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 200px;
+}
+
+.degree {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* CONTACT */
+.contactMe {
+  padding: 0px 50px 0px 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.contact-card {
+  width: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image img {
+  aspect-ratio: 1/1;
+  width: 75%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contact-form {
+  height: 70vh;
+  width: 30vw;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.input-field {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.contactDetail {
+  width: 25vw;
+  background-color: #000C3F;
+  border-radius: 20px;
+  padding-top: 30px;
+  color: aliceblue;
+  text-align: center;
+  font-size: 20px;
+}
+
+.contactDetail h3 {
+  color: aliceblue;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+@media(max-width: 1024px){
+  .intro h1{
+    font-size: 56px;
+  }
+ 
+
+}
+@media(max-width: 920px){
+  .intro h1{
+    font-size: 48px;
+  }
+
+   h2{
+  font-size: 26px;
+}
+
+}
+
+@media(max-width: 750px){
+  .introTxt{
+    width: 80vw;
+    text-align: center;
+  }
+.intro{
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.intro h1{
+  padding-top: 0px;
+}
+.introImg img{
+  width: 40vw;
+}
+}
+@media(max-width: 650px){
+  .intro h1{
+    font-size: 42px;
+  }
+
+     h2{
+  font-size: 22px;
+}
+}
+@media(max-width: 550px){
+  .intro h1{
+    font-size: 36px;
+  }
+
+     h2{
+  font-size: 20px;
+}
+.introImg img{
+  width: 50vw;
+}
+}
+@media(max-width: 400px){
+  .intro h1{
+    font-size: 32px;
+  }
+
+     h2{
+  font-size: 18px;
+}
+}
