@@ -10,118 +10,118 @@
             <h1>Hi, I am Salman.</h1>
             <h2>A Wordpress developer.</h2>
             <p><?php echo esc_html(get_field('introduction')); ?></p>
-            <button class = 'btn-secondary' >Get In Touch</button>
+            <button class='btn-secondary'>Get In Touch</button>
         </div>
         <div class='introImg'>
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/static/boy.avif" alt="hello">
         </div>
     </div>
-    <hr>
 
     <!--About Section-->
 
     <section class="section about" id="about" aria-label="about">
 
         <div class="container">
+            <div class="aboutContent" id='about'>
+                <div class="aboutText">
+                    <h2>What I Do?</h2>
 
-            <div class="wrapper">
-                <div class="aboutContent" id = 'about'>
-                    <div class="aboutText">
-                        <h2>What I Do?</h2>
-
-                        <p><?php echo esc_html(get_field('whatido')); ?></p>
-                    </div>
-
-                    <div class='aboutImg'>
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/static/languages.jpg" alt="hello">
-                    </div>
+                    <p><?php echo esc_html(get_field('whatido')); ?></p>
                 </div>
 
-                <div class="strength" id = 'skills'>
-                    <h2>My Strength</h2>
-                    <br>
-                    <ul class="progress-list" data-reveal="right">
-
-                        <li class="progress-item">
-
-                            <div class="label-wrapper">
-                                <p>Frontend Development</p>
-
-                                <span class="span">90 %</span>
-                            </div>
-
-                            <div class="progress">
-                                <div class="progress-fill" style="width: 90%; background-color: #c7b1dd"></div>
-                            </div>
-
-                        </li>
-
-                        <li class="progress-item">
-
-                            <div class="label-wrapper">
-                                <p>Responsive & Pixel Perfect Development</p>
-
-                                <span class="span">100 %</span>
-                            </div>
-
-                            <div class="progress">
-                                <div class="progress-fill" style="width: 100%; background-color: #8caeec"></div>
-                            </div>
-
-                        </li>
-
-                        <li class="progress-item">
-
-                            <div class="label-wrapper">
-                                <p>Custom Tempelates and Themes</p>
-
-                                <span class="span">80 %</span>
-                            </div>
-
-                            <div class="progress">
-                                <div class="progress-fill" style="width: 80%; background-color: #b0d4c1"></div>
-                            </div>
-
-                        </li>
-
-                        <li class="progress-item">
-
-                            <div class="label-wrapper">
-                                <p>SQL</p>
-
-                                <span class="span">70 %</span>
-                            </div>
-
-                            <div class="progress">
-                                <div class="progress-fill" style="width: 70%; background-color: #e3a6b6"></div>
-                            </div>
-
-                        </li>
-
-                        <li class="progress-item">
-
-                            <div class="label-wrapper">
-                                <p>Backend</p>
-
-                                <span class="span">60 %</span>
-                            </div>
-
-                            <div class="progress">
-                                <div class="progress-fill" style="width: 60%; background-color: #e3a6b6"></div>
-                            </div>
-
-                        </li>
-
-                    </ul>
+                <div class='aboutImg'>
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/static/elements.png" alt="hello">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/static/Model Glow.png" alt="hello">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/static/stars.png" alt="hello">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/static/AI Model.png" alt="hello">
                 </div>
-
             </div>
+
+            <div class="strength" id='skills'>
+                <h2>My Strength</h2>
+                <br>
+                <ul class="progress-list" data-reveal="right">
+
+                    <li class="progress-item">
+
+                        <div class="label-wrapper">
+                            <p>Frontend Development</p>
+
+                            <span class="span">90 %</span>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-fill" style="width: 90%; background-color: #c7b1dd"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="progress-item">
+
+                        <div class="label-wrapper">
+                            <p>Responsive & Pixel Perfect Development</p>
+
+                            <span class="span">100 %</span>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-fill" style="width: 100%; background-color: #8caeec"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="progress-item">
+
+                        <div class="label-wrapper">
+                            <p>Custom Tempelates and Themes</p>
+
+                            <span class="span">80 %</span>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-fill" style="width: 80%; background-color: #b0d4c1"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="progress-item">
+
+                        <div class="label-wrapper">
+                            <p>SQL</p>
+
+                            <span class="span">70 %</span>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-fill" style="width: 70%; background-color: #e3a6b6"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="progress-item">
+
+                        <div class="label-wrapper">
+                            <p>Backend</p>
+
+                            <span class="span">60 %</span>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-fill" style="width: 60%; background-color: #e3a6b6"></div>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+
         </div>
     </section>
+
     <!-- education siection -->
     <div class="educationParent" id="education">
         <h1>Have A look on my Educational Background</h1>
-        <div class="education" >
+        <div class="education">
             <div class='educationImg'>
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/static/graduation.jpg" alt="hello">
             </div>
@@ -225,13 +225,13 @@
             </div>
             <div class='contactDetail'>
                 <h3>Visit M LinkedIn Profile </h3>
-                <a href="https://www.linkedin.com/in/salman2210" >
+                <a href="https://www.linkedin.com/in/salman2210">
                     <p>Salman Siddiq</p>
                 </a>
             </div>
         </div>
     </section>
-    
+
 </div>
 
 

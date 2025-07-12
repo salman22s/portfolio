@@ -53,10 +53,7 @@ h2{
 
 .introTxt {
   width: 60vw;
-  /* padding: 40px; */
 }
-
-
 
 .introTxt button {
   margin-top: 50px;
@@ -69,6 +66,9 @@ h2{
   transform: scaleX(-1);
   width: 35vw;
   object-fit: cover;
+}
+.introImg {
+  align-content: center;
 }
 
 .parent {
@@ -113,6 +113,7 @@ a {
 }
 
 .btn-secondary:hover {
+  border: 2px solid #000C3F;
   background-color: #000C3F;
   color: #fff;
 }
@@ -121,36 +122,56 @@ a {
 /* ABOUT */
 
 .about {
-  padding: 2rem 0;
-  background-color: #E6F0FA;
+  padding: 2rem 0; 
 }
 
 .progress-list {
   margin: 0px 0px 50px 0px;
-  list-style: none;
-
+  list-style: none; 
 }
 
 .aboutContent {
-  padding: 30px;
+  padding-left: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom right, #000C3F 0%, #000000 70%, #000000 100%);
+  margin-left: -30px;
+  margin-right: -30px;
+  height: fit-content;
+}
+
+.aboutImg  {
+  width: 50vw;
+  position: relative;
+  height: auto;
+  aspect-ratio:   1/1;
 }
 
 .aboutImg img {
-  border-radius: 50%;
-  width: 20vw;
-  margin-right: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
 }
 
-.aboutText {
-  width: 60vw;
+.aboutText{
+  width: 40vw;
   padding: 20px;
+  color: aliceblue;
 }
 
+.aboutText h2{
+  color: aliceblue;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
 .strength {
   padding: 30px;
+  margin-top: 50px;
 }
 
 .progress-item {
@@ -278,13 +299,15 @@ a {
 
 .contactInfo {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 30px;
   margin-bottom: 100px;
+  margin-top: 30px;
+  flex-wrap: wrap;
 }
 
 .contactDetail {
-  width: 25vw;
+  width: 300px;
   background-color: #000C3F;
   border-radius: 20px;
   padding-top: 30px;
@@ -310,6 +333,9 @@ a {
   .intro h1{
     font-size: 48px;
   }
+  .intro{
+    padding: 0px 0px 100px 0px;
+  }
 
    h2{
   font-size: 26px;
@@ -332,6 +358,9 @@ a {
 .introImg img{
   width: 40vw;
 }
+.aboutText{
+  width: 50vw;
+}
 }
 @media(max-width: 650px){
   .intro h1{
@@ -341,6 +370,29 @@ a {
      h2{
   font-size: 22px;
 }
+.aboutContent {
+  flex-direction: column-reverse;
+}
+.aboutText{
+  width: 90vw; 
+}
+.aboutImg {
+  width: 85vw;
+}
+.degree {
+  flex-direction: column;
+  gap: 0px;
+}
+.contactMe {
+  flex-direction: column;
+}
+.contact-card {
+  width: 90vw;
+}
+.contact-form {
+  width: 80vw;
+}
+
 }
 @media(max-width: 550px){
   .intro h1{

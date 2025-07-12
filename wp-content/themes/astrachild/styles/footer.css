@@ -1,19 +1,30 @@
 footer{
     background-color: #000c3f;
+    color: aliceblue;
 }
-
-.site-footer {
-    background-color: #1f1f1f;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+.footer-parent{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
-
-.site-footer a {
-    color: #8caeec;
-    text-decoration: none;
+.link-logos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
 }
-
-.site-footer a:hover {
+.link-logos img{
+    height: 50px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.footer-parent h2{
+    color: aliceblue;
     text-decoration: underline;
+    font-size: 24px;
+    margin: 20px;
 }
