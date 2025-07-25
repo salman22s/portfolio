@@ -1,7 +1,10 @@
 <?php
+// Enqueue Parent and Child Theme Styles
 function astra_child_enqueue_styles() {
+    // Load parent theme style
     wp_enqueue_style('astra-theme-css', get_template_directory_uri() . '/style.css');
 
+    // Load child theme base style
     wp_enqueue_style(
         'astra-child-style',
         get_stylesheet_directory_uri() . '/styles/style.css',
@@ -9,6 +12,7 @@ function astra_child_enqueue_styles() {
         wp_get_theme()->get('Version')
     );
 
+    // Load specific section styles
     wp_enqueue_style(
         'astra-child-header-style',
         get_stylesheet_directory_uri() . '/styles/header.css',
@@ -25,11 +29,7 @@ function astra_child_enqueue_styles() {
 }
 add_action('wp_enqueue_scripts', 'astra_child_enqueue_styles', 15);
 
-function register_custom_menus() {
-    register_nav_menu('navmenu', __('Nav Menu'));
-}
-add_action('init', 'register_custom_menus');
-
+// Enqueue custom JS
 function custom_theme_scripts() {
     wp_enqueue_script(
         'custom-js',
@@ -40,4 +40,13 @@ function custom_theme_scripts() {
     );
 }
 add_action('wp_enqueue_scripts', 'custom_theme_scripts');
+
+// Register Desktop and Mobile Menus
+function register_custom_menus() {
+    register_nav_menus(array(
+        'navmenu'    => __('Nav Menu'),       // For desktop
+        'mobilemenu' => __('Mobile Menu'),    // For mobile
+    ));
+}
+add_action('init', 'register_custom_menus');
 ?>

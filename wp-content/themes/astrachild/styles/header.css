@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #000C3F;
+    background: linear-gradient(to bottom right, #000C3F 0%, #000000 70%, #000000 100%);
+  
 }
 .logo a{
     display: flex;
@@ -44,8 +45,6 @@
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
-    /* font-size: 20px; */
-     
     display: inline-block;
     text-align: center;
 }
@@ -56,3 +55,48 @@
     border-radius: 14px;
     font-weight: bold;
 }   
+
+#mobileNav {
+  display: none;
+}
+@media(max-width: 650px){
+.navbar{
+    display: none;
+}
+
+#mobileNav {
+  display: none;
+}
+
+#mobileNav.active {
+  display: flex;
+  flex-direction: column;
+  top: 70px;
+  position: absolute;
+  background: linear-gradient(to bottom right, #000C3F 0%, #000000 70%, #000000 100%);
+  padding: 10px 20px;
+  color: aliceblue;
+  width: 90%;
+  z-index: 1;
+  height: 100vh;
+}
+#mobileNav .mobilemenu li{
+    width: 100%;
+    list-style: none;
+}
+#mobileNav .mobilemenu li a {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    gap: 5px;
+    text-decoration: none;
+  }
+
+#mobileNav .mobilemenu li a:hover {
+    background-color: aliceblue;
+    color: #000C3F;
+  }
+}
